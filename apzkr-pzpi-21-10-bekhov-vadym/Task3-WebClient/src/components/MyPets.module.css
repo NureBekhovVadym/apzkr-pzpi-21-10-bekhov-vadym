@@ -1,0 +1,51 @@
+.petsContainer {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.petsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.petCard {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.petCard h3 {
+  margin-bottom: 0.5rem;
+}
+
+.petCard p {
+  margin: 0.25rem 0;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.addButton {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.75rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.addButton:hover {
+  background-color: #218838;
+}

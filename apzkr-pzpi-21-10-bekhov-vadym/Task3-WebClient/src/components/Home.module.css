@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left {
+    flex: 1;
+    display: flex;
+    align-items: flex-start; /* розташовуємо елементи зверху */
+    justify-content: center;
+    padding-top: 1.5rem; /* додаємо відступ зверху */
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* змінено на 'flex-start' для розміщення елементів зверху */
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: #ffffff;
+  }
+  
+  .image {
+    width: 500px; /* встановіть бажану ширину */
+    height: 600px; /* встановіть бажану висоту */
+    object-fit: cover; /* зберігає пропорції зображення і заповнює контейнер */
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .fadeIn {
+    opacity: 1;
+  }
+  
+  .fadeOut {
+    opacity: 0;
+  }
+  
+  .right h2, .right p, .right ul {
+    margin-bottom: 1rem;
+  }
+  
+  .right p {
+    font-size: 1.2rem;
+  }
+  
+  .right ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  
+  .right ul li {
+    margin-bottom: 0.5rem;
+  }
+  
